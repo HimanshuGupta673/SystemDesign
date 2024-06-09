@@ -1,0 +1,51 @@
+Overview
+LogProcessor is the base class for all log processors (InfoLogProcessor, DebugLogProcessor, ErrorLogProcessor).
+Each log processor can handle a specific type of log (INFO, DEBUG, ERROR).
+If a log processor can't handle the log message, it passes the message to the next processor in the chain.
+Sequence of Execution
+Initialization: The Main class sets up the chain of log processors:
+
+java
+Copy code
+LogProcessor logObject = new InfoLogProcessor(
+                            new DebugLogProcessor(
+                                new ErrorLogProcessor(null)
+                            )
+                         );
+ErrorLogProcessor is the last in the chain and has null as its next processor.
+DebugLogProcessor is linked to ErrorLogProcessor.
+InfoLogProcessor is linked to DebugLogProcessor.
+Logging Process: When logObject.log(logLevel, message) is called, the message is processed through the chain.
+
+Detailed Execution Flow
+Example 1: Logging an ERROR message
+java
+Copy code
+logObject.log(LogProcessor.ERROR, "Exception happens");
+The call starts at InfoLogProcessor.
+InfoLogProcessor checks if the log level is INFO. It isn't, so it calls super.log(logLevel, message) which passes the message to DebugLogProcessor.
+DebugLogProcessor checks if the log level is DEBUG. It isn't, so it calls super.log(logLevel, message) which passes the message to ErrorLogProcessor.
+ErrorLogProcessor checks if the log level is ERROR. It is, so it prints the message: ERROR: Exception happens.
+Example 2: Logging a DEBUG message
+java
+Copy code
+logObject.log(LogProcessor.DEBUG, "Need to debug this");
+The call starts at InfoLogProcessor.
+InfoLogProcessor checks if the log level is INFO. It isn't, so it calls super.log(logLevel, message) which passes the message to DebugLogProcessor.
+DebugLogProcessor checks if the log level is DEBUG. It is, so it prints the message: DEBUG: Need to debug this.
+Example 3: Logging an INFO message
+java
+Copy code
+logObject.log(LogProcessor.INFO, "Just for info");
+The call starts at InfoLogProcessor.
+InfoLogProcessor checks if the log level is INFO. It is, so it prints the message: INFO: Just for info.
+Key Points
+Chain Setup:
+InfoLogProcessor -> DebugLogProcessor -> ErrorLogProcessor
+Handling Requests:
+Each processor checks if it can handle the log message.
+If it can, it handles the message.
+If it cannot, it passes the message to the next processor in the chain.
+Sequence:
+The chain is traversed from the first processor (InfoLogProcessor) to the last processor (ErrorLogProcessor).
+By setting up the processors in this way, each one handles its specific type of log, and if it can't, it delegates to the next one. This provides a flexible and extendable way to handle various types of log messages.

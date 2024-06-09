@@ -13,17 +13,47 @@ public class TicTacToeGame {
 
     private void initializeGame() {
         players = new LinkedList<>();
-        PlayingPieceX crossPiece = new PlayingPieceX();
-        Player player1 = new Player("Player1", crossPiece);
+        Scanner sc = new Scanner(System.in);
 
-        PlayingPieceO noughtsPiece = new PlayingPieceO();
-        Player player2 = new Player("Player2", noughtsPiece);
+        System.out.println("Player1, choose your piece (X/O): ");
+        String pieceChoice = sc.nextLine().trim().toUpperCase();
+
+        while (!pieceChoice.equals("X") && !pieceChoice.equals("O")) {
+            System.out.println("Invalid choice. Please choose either X or O: ");
+            pieceChoice = sc.nextLine().trim().toUpperCase();
+        }
+
+        PlayingPiece player1Piece;
+        PlayingPiece player2Piece;
+        if (pieceChoice.equals("X")) {
+            player1Piece = new PlayingPieceX();
+            player2Piece = new PlayingPieceO();
+        } else {
+            player1Piece = new PlayingPieceO();
+            player2Piece = new PlayingPieceX();
+        }
+
+        Player player1 = new Player("Player1", player1Piece);
+        Player player2 = new Player("Player2", player2Piece);
 
         players.add(player1);
         players.add(player2);
 
         gameBoard = new Board(3);
     }
+//    private void initializeGame() {
+//        players = new LinkedList<>();
+//        PlayingPieceX crossPiece = new PlayingPieceX();
+//        Player player1 = new Player("Player1", crossPiece);
+//
+//        PlayingPieceO noughtsPiece = new PlayingPieceO();
+//        Player player2 = new Player("Player2", noughtsPiece);
+//
+//        players.add(player1);
+//        players.add(player2);
+//
+//        gameBoard = new Board(3);
+//    }
 
     public String startGame(){
         boolean noWinner = true;
