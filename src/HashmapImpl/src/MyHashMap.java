@@ -3,7 +3,7 @@ public class MyHashMap<K,V> {
     class Entry<K,V>{
         public K key;
         public V value;
-        public Entry next;
+        public Entry<K,V> next;
 
         Entry(K k,V v){
             key = k;
@@ -14,7 +14,8 @@ public class MyHashMap<K,V> {
     private static final int INITIAL_SIZE = 1<<4;
     private static final int MAXIMUM_CAPACITY = 1 << 30;
 
-    public Entry[] hashTable;
+
+    public Entry<K,V>[] hashTable;
 
     public MyHashMap(){
         hashTable = new Entry[INITIAL_SIZE];
@@ -37,13 +38,13 @@ public class MyHashMap<K,V> {
 
     public void put(K key,V value){
         int hashCode = key.hashCode() % hashTable.length;
-        Entry node = hashTable[hashCode];
+        Entry<K, V> node = hashTable[hashCode];
 
         if(node == null){
-            Entry newNode = new Entry(key,value);
+            Entry<K, V> newNode = new Entry(key,value);
             hashTable[hashCode] = newNode;
         }else{
-            Entry previousNode = node;
+            Entry<K, V> previousNode = node;
             while (node!=null){
                 if(node.key == key){
                     node.value = value;
@@ -52,14 +53,14 @@ public class MyHashMap<K,V> {
                 previousNode = node;
                 node = node.next;
             }
-            Entry newNode = new Entry(key,value);
+            Entry<K, V>newNode = new Entry(key,value);
             previousNode.next = newNode;
         }
     }
 
     public V get(K key){
         int hashCode = key.hashCode() % hashTable.length;
-        Entry node = hashTable[hashCode];
+        Entry<K, V>node = hashTable[hashCode];
 
         while (node!=null){
             if(node.key.equals(key)){
