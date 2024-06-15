@@ -25,7 +25,7 @@ public class IdleState implements State {
 
     @Override
     public void insertCoin(VendingMachine machine, Coin coin) throws Exception {
-        throw new Exception("You cannot insert coin in idle state")
+        throw new Exception("You cannot insert coin in idle state");
     }
 
     @Override

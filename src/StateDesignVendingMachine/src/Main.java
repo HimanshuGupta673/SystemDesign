@@ -41,9 +41,21 @@ public class Main {
     private static void displayInventory(VendingMachine vendingMachine) {
         ItemShelf[] slots = vendingMachine.getInventory().getInventory();
         for (int i = 0; i < slots.length; i++) {
-            System.out.println("CodeNumber: "+slots[i].getCode()+" Item: "+slots[i].getItem().getType().name()+" Price: "+slots[i].getItem().getPrice()+" isAvailable: "+!slots[i].isSoldOut());
+            Item item = slots[i].getItem();
+            if (item != null) {
+                System.out.println("CodeNumber: " + slots[i].getCode() +
+                        " Item: " + item.getType().name() +
+                        " Price: " + item.getPrice() +
+                        " isAvailable: " + !slots[i].isSoldOut());
+            } else {
+                System.out.println("CodeNumber: " + slots[i].getCode() +
+                        " Item: None" +
+                        " Price: N/A" +
+                        " isAvailable: " + !slots[i].isSoldOut());
+            }
         }
     }
+
 
     private static void fillUpInventory(VendingMachine vendingMachine) {
         ItemShelf[] slots = vendingMachine.getInventory().getInventory();

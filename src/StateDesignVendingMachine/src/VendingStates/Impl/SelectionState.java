@@ -44,6 +44,11 @@ public class SelectionState implements State {
               System.out.println("Insufficient Amount, Product you selected is for price: "+item.getPrice());
               refundFullMoney(machine);
               throw new Exception("Insufficient amount");
+          }else if(paidByUser>=item.getPrice()){
+              if(paidByUser>item.getPrice()){
+                  getChange(paidByUser-item.getPrice());
+              }
+              machine.setVendingMachineState(new DispenseState(machine,codeNumber));
           }
     }
 
@@ -62,6 +67,8 @@ public class SelectionState implements State {
     @Override
     public List<Coin> refundFullMoney(VendingMachine machine) throws Exception {
         System.out.println("Returned the full amount of money back in the coin dispense tray");
+        machine.setVendingMachineState(new IdleState());
+        return machine.getCoinList();
     }
 
     @Override
