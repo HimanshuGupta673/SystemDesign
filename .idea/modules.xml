@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/src/Chain-Of-Responsibility-LoggerPattern/Chain-Of-Responsibility-LoggerPattern.iml" filepath="$PROJECT_DIR$/src/Chain-Of-Responsibility-LoggerPattern/Chain-Of-Responsibility-LoggerPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/CompositeDesignPattern/CompositeDesignPattern.iml" filepath="$PROJECT_DIR$/src/CompositeDesignPattern/CompositeDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/DecoratorPattern/DecoratorPattern.iml" filepath="$PROJECT_DIR$/src/DecoratorPattern/DecoratorPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/FactoryPattern/FactoryPattern.iml" filepath="$PROJECT_DIR$/src/FactoryPattern/FactoryPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/HashmapImpl/HashmapImpl.iml" filepath="$PROJECT_DIR$/src/HashmapImpl/HashmapImpl.iml" />
