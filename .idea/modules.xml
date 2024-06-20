@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/src/BuilderDesignPattern_CreationalDP/BuilderDesignPattern_CreationalDP.iml" filepath="$PROJECT_DIR$/src/BuilderDesignPattern_CreationalDP/BuilderDesignPattern_CreationalDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/Chain-Of-Responsibility-LoggerPattern/Chain-Of-Responsibility-LoggerPattern.iml" filepath="$PROJECT_DIR$/src/Chain-Of-Responsibility-LoggerPattern/Chain-Of-Responsibility-LoggerPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/CompositeDesignPattern/CompositeDesignPattern.iml" filepath="$PROJECT_DIR$/src/CompositeDesignPattern/CompositeDesignPattern.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/CreationalDesignPattern/CreationalDesignPattern.iml" filepath="$PROJECT_DIR$/src/CreationalDesignPattern/CreationalDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/DecoratorPattern/DecoratorPattern.iml" filepath="$PROJECT_DIR$/src/DecoratorPattern/DecoratorPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/FacadeDesignPattern/FacadeDesignPattern.iml" filepath="$PROJECT_DIR$/src/FacadeDesignPattern/FacadeDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/FactoryPattern/FactoryPattern.iml" filepath="$PROJECT_DIR$/src/FactoryPattern/FactoryPattern.iml" />
