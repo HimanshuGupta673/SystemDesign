@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/src/BridgeDesignPattern/BridgeDesignPattern.iml" filepath="$PROJECT_DIR$/src/BridgeDesignPattern/BridgeDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/BuilderDesignPattern_CreationalDP/BuilderDesignPattern_CreationalDP.iml" filepath="$PROJECT_DIR$/src/BuilderDesignPattern_CreationalDP/BuilderDesignPattern_CreationalDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/Chain-Of-Responsibility-LoggerPattern/Chain-Of-Responsibility-LoggerPattern.iml" filepath="$PROJECT_DIR$/src/Chain-Of-Responsibility-LoggerPattern/Chain-Of-Responsibility-LoggerPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/CompositeDesignPattern/CompositeDesignPattern.iml" filepath="$PROJECT_DIR$/src/CompositeDesignPattern/CompositeDesignPattern.iml" />
