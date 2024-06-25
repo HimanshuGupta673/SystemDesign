@@ -70,3 +70,23 @@ The Bridge Pattern is a structural design pattern that separates an object's abs
 +----------------+    +-------------------+
 ```
 
+### Command Design Pattern
+The Command Design Pattern is a behavioral design pattern that turns a request into a stand-alone object that contains all information about the request. This transformation allows you to parameterize methods with different requests, delay or queue a request's execution, and support undoable operations.
+
+### Key Concepts
+
+1. **Command**: This is an interface or abstract class that declares a method for executing a command. It can also have a method for undoing the command.
+2. **Concrete Command**: These are classes that implement the Command interface. They contain a reference to a receiver object and implement the execute method by calling the corresponding action(s) on the receiver.
+3. **Receiver**: The object that performs the actual work when the command's execute method is called.
+4. **Invoker**: The object that holds a command and at some point asks the command to carry out a request by calling its execute method.
+5. **Client**: The client is responsible for creating the command object and associating it with the receiver.
+
+### How It Works
+
+1. **Client creates a command**: The client creates an instance of a concrete command and passes it to the invoker.
+2. **Invoker stores the command**: The invoker stores the command object. It doesn't know what the command does, just that it can be executed.
+3. **Invoker triggers the command**: When the invoker is asked to perform an action, it calls the execute method on the stored command.
+4. **Command calls receiver**: The command object calls methods on the receiver to fulfill the request.
+
+
+
