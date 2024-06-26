@@ -13,6 +13,7 @@
       <module fileurl="file://$PROJECT_DIR$/src/FactoryPattern/FactoryPattern.iml" filepath="$PROJECT_DIR$/src/FactoryPattern/FactoryPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/HashmapImpl/HashmapImpl.iml" filepath="$PROJECT_DIR$/src/HashmapImpl/HashmapImpl.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/IteratorDP-BDP/IteratorDP-BDP.iml" filepath="$PROJECT_DIR$/src/IteratorDP-BDP/IteratorDP-BDP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/MediatorDesignPattern/MediatorDesignPattern.iml" filepath="$PROJECT_DIR$/src/MediatorDesignPattern/MediatorDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/NullPattern/NullPattern.iml" filepath="$PROJECT_DIR$/src/NullPattern/NullPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/ProxyDesignPattern/ProxyDesignPattern.iml" filepath="$PROJECT_DIR$/src/ProxyDesignPattern/ProxyDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/StateDesignVendingMachine/StateDesignVendingMachine.iml" filepath="$PROJECT_DIR$/src/StateDesignVendingMachine/StateDesignVendingMachine.iml" />
