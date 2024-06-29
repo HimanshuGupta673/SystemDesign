@@ -89,4 +89,22 @@ The Command Design Pattern is a behavioral design pattern that turns a request i
 4. **Command calls receiver**: The command object calls methods on the receiver to fulfill the request.
 
 
+### MVC Design Pattern
+
+The MVC (Model-View-Controller) design pattern is a way to organize code in a Java application to separate concerns, making the application easier to manage, test, and maintain. Here's a simple breakdown:
+
+1. **Model**:
+   - Represents the data and the business logic of the application.
+   - It directly manages the data, logic, and rules of the application.
+   - For example, in a library application, the `Book` class and methods to add, remove, or update books would be part of the Model.
+
+2. **View**:
+   - Represents the user interface (UI) of the application.
+   - It displays the data from the Model to the user and sends user commands to the Controller.
+   - For example, the web pages or graphical user interfaces (GUIs) that show lists of books would be part of the View.
+
+3. **Controller**:
+   - Acts as an intermediary between the Model and the View.
+   - It listens to the user input from the View, processes it (e.g., updating data in the Model), and updates the View accordingly.
+   - For example, if a user clicks a button to add a new book, the Controller handles this action by updating the Model and then refreshing the View.
 

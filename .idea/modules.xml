@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/src/DecoratorPattern/ApplyCouponOnShoppingCart-DP/ApplyCouponOnShoppingCart-DP.iml" filepath="$PROJECT_DIR$/src/DecoratorPattern/ApplyCouponOnShoppingCart-DP/ApplyCouponOnShoppingCart-DP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/BehaviouralDesignPattern/BehaviouralDesignPattern.iml" filepath="$PROJECT_DIR$/src/BehaviouralDesignPattern/BehaviouralDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/BridgeDesignPattern/BridgeDesignPattern.iml" filepath="$PROJECT_DIR$/src/BridgeDesignPattern/BridgeDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/BuilderDesignPattern_CreationalDP/BuilderDesignPattern_CreationalDP.iml" filepath="$PROJECT_DIR$/src/BuilderDesignPattern_CreationalDP/BuilderDesignPattern_CreationalDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/Chain-Of-Responsibility-LoggerPattern/Chain-Of-Responsibility-LoggerPattern.iml" filepath="$PROJECT_DIR$/src/Chain-Of-Responsibility-LoggerPattern/Chain-Of-Responsibility-LoggerPattern.iml" />
