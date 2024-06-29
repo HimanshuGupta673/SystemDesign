@@ -108,3 +108,103 @@ The MVC (Model-View-Controller) design pattern is a way to organize code in a Ja
    - It listens to the user input from the View, processes it (e.g., updating data in the Model), and updates the View accordingly.
    - For example, if a user clicks a button to add a new book, the Controller handles this action by updating the Model and then refreshing the View.
 
+### Memento Design Pattern
+
+The Memento Design Pattern is a behavioral design pattern that allows you to capture and save the current state of an object without exposing its internal structure. This pattern is useful for implementing features like undo/redo operations, where you need to revert an object to a previous state.
+
+### Components of the Memento Pattern
+
+1. **Originator**: The object whose state needs to be saved and restored.
+2. **Memento**: The object that stores the state of the Originator. It is a simple object with no methods that modify its data.
+3. **Caretaker**: The object responsible for storing and restoring the Memento. It does not operate on or examine the contents of the Memento.
+
+### Template Design Pattern
+
+The Template Method Design Pattern is a behavioral design pattern that defines the skeleton of an algorithm in a base class but allows subclasses to override specific steps of the algorithm without changing its structure. This pattern is useful when you have an algorithm with common steps but some of these steps may vary between implementations.
+
+### Components of the Template Method Pattern
+
+1. **Abstract Class (Template Class)**: Defines the template method and basic structure of the algorithm. It contains concrete methods (which provide default behavior) and abstract methods (which subclasses need to implement).
+2. **Concrete Classes**: Subclasses that implement the abstract methods defined in the template class, providing specific behavior for the steps that can vary.
+
+### Example 
+
+Let's consider an example where we have an abstract class for a data processor. This processor reads data, processes it, and saves the results. The reading and saving steps are common, but the processing step may vary.
+
+#### Step 1: Create the Abstract Class
+
+The `DataProcessor` class defines the template method `processData()` and provides default implementations for reading and saving data. The `process()` method is abstract and must be implemented by subclasses.
+
+```java
+abstract class DataProcessor {
+    // Template method
+    public final void processData() {
+        readData();
+        process();
+        saveData();
+    }
+
+    private void readData() {
+        System.out.println("Reading data");
+    }
+
+    protected abstract void process();
+
+    private void saveData() {
+        System.out.println("Saving data");
+    }
+}
+```
+
+#### Step 2: Create Concrete Classes
+
+Subclasses implement the `process()` method to provide specific behavior.
+
+```java
+class TextDataProcessor extends DataProcessor {
+    @Override
+    protected void process() {
+        System.out.println("Processing text data");
+    }
+}
+
+class ImageDataProcessor extends DataProcessor {
+    @Override
+    protected void process() {
+        System.out.println("Processing image data");
+    }
+}
+```
+
+#### Step 3: Use the Template Method Pattern
+
+Here's how you use these classes together:
+
+```java
+public class TemplateMethodPatternDemo {
+    public static void main(String[] args) {
+        DataProcessor textProcessor = new TextDataProcessor();
+        textProcessor.processData();
+
+        System.out.println();
+
+        DataProcessor imageProcessor = new ImageDataProcessor();
+        imageProcessor.processData();
+    }
+}
+```
+
+### Explanation
+
+1. **Abstract Class (Template Class)**: The `DataProcessor` class defines the `processData()` template method, which outlines the steps of the algorithm. The `readData()` and `saveData()` methods are concrete and provide default behavior. The `process()` method is abstract, allowing subclasses to define their specific processing logic.
+
+2. **Concrete Classes**: The `TextDataProcessor` and `ImageDataProcessor` classes extend `DataProcessor` and implement the `process()` method with specific behavior for processing text and image data, respectively.
+
+3. **Template Method Pattern in Action**: In the `TemplateMethodPatternDemo` class, we create instances of `TextDataProcessor` and `ImageDataProcessor` and call the `processData()` method on each. This method follows the template defined in the `DataProcessor` class, but the actual processing step is handled by the concrete subclasses.
+
+### Benefits of the Template Method Pattern
+
+- **Code Reuse**: Common code is placed in the abstract class, allowing reuse across multiple concrete classes.
+- **Enforces a Consistent Algorithm Structure**: The template method ensures that the overall structure of the algorithm remains consistent while allowing specific steps to vary.
+- **Simplifies Code Maintenance**: Changes to the common steps of the algorithm need to be made only in the abstract class.
+

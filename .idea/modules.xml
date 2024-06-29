@@ -7,7 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/src/BridgeDesignPattern/BridgeDesignPattern.iml" filepath="$PROJECT_DIR$/src/BridgeDesignPattern/BridgeDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/BuilderDesignPattern_CreationalDP/BuilderDesignPattern_CreationalDP.iml" filepath="$PROJECT_DIR$/src/BuilderDesignPattern_CreationalDP/BuilderDesignPattern_CreationalDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/Chain-Of-Responsibility-LoggerPattern/Chain-Of-Responsibility-LoggerPattern.iml" filepath="$PROJECT_DIR$/src/Chain-Of-Responsibility-LoggerPattern/Chain-Of-Responsibility-LoggerPattern.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/CommandDP-UndoRedo-BDP/CommandDP-UndoRedo-BDP.iml" filepath="$PROJECT_DIR$/src/CommandDP-UndoRedo-BDP/CommandDP-UndoRedo-BDP.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/BehaviouralDesignPattern/CommandDP-UndoRedo-BDP/CommandDP-UndoRedo-BDP.iml" filepath="$PROJECT_DIR$/src/BehaviouralDesignPattern/CommandDP-UndoRedo-BDP/CommandDP-UndoRedo-BDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/CompositeDesignPattern/CompositeDesignPattern.iml" filepath="$PROJECT_DIR$/src/CompositeDesignPattern/CompositeDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/CreationalDesignPattern/CreationalDesignPattern.iml" filepath="$PROJECT_DIR$/src/CreationalDesignPattern/CreationalDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/DecoratorPattern/DecoratorPattern.iml" filepath="$PROJECT_DIR$/src/DecoratorPattern/DecoratorPattern.iml" />
@@ -22,6 +22,7 @@
       <module fileurl="file://$PROJECT_DIR$/src/StateDesignVendingMachine/StateDesignVendingMachine.iml" filepath="$PROJECT_DIR$/src/StateDesignVendingMachine/StateDesignVendingMachine.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/StrategyDesignPattern/StrategyDesignPattern.iml" filepath="$PROJECT_DIR$/src/StrategyDesignPattern/StrategyDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/StructuralDesignPattern-AdaptorDesign/StructuralDesignPattern-AdaptorDesign.iml" filepath="$PROJECT_DIR$/src/StructuralDesignPattern-AdaptorDesign/StructuralDesignPattern-AdaptorDesign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/BehaviouralDesignPattern/TemplateDesignPattern/TemplateDesignPattern.iml" filepath="$PROJECT_DIR$/src/BehaviouralDesignPattern/TemplateDesignPattern/TemplateDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/TicTacToe/TicTacToe.iml" filepath="$PROJECT_DIR$/src/TicTacToe/TicTacToe.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/WordProcessorDP-FlyWeightDP-SDP/WordProcessorDP-FlyWeightDP-SDP.iml" filepath="$PROJECT_DIR$/src/WordProcessorDP-FlyWeightDP-SDP/WordProcessorDP-FlyWeightDP-SDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/src.iml" filepath="$PROJECT_DIR$/src/src.iml" />
