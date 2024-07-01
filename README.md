@@ -219,3 +219,40 @@ The Interpreter pattern provides a way to evaluate language grammar or expressio
 3. **Non-terminal Expression:** Implements the `interpret` method for non-terminal symbols in the grammar, representing rules or expressions that involve other expressions.
 4. **Context:** Contains information that's global to the interpreter.
 
+### Object Pool Design Pattern
+
+The Object Pool Design Pattern is a creational design pattern that manages a set of reusable objects. Instead of creating and destroying objects frequently, the pattern keeps a pool of objects and reuses them when needed. This pattern is particularly useful for managing expensive-to-create objects like database connections, thread pools, or network sockets.
+
+### Key Components
+
+1. **Object Pool:** Manages a pool of reusable objects.
+2. **Reusable Object:** An object that can be reused instead of being created and destroyed repeatedly.
+3. **Client:** Requests objects from the pool and returns them after use.
+
+### How It Works
+
+1. **Initialization:** The pool is initialized with a set number of objects.
+2. **Borrowing Objects:** When a client needs an object, it borrows one from the pool.
+3. **Returning Objects:** After using the object, the client returns it to the pool.
+4. **Pool Management:** The pool manages the availability and lifecycle of the objects.
+
+
+### Advantages
+
+1. **Performance Improvement:** Reduces the overhead of creating and destroying objects, improving performance.
+2. **Resource Management:** Efficiently manages limited resources, such as database connections or threads.
+3. **Reduced Latency:** Objects are pre-created and ready to use, reducing latency in object creation.(Latency refers to the time delay experienced in a system before a desired outcome is achieved.)
+
+### Disadvantages
+
+1. **Complexity:** Increases the complexity of the code, as you need to manage the pool and ensure thread safety.
+2. **Memory Consumption:** Pools can consume a lot of memory if not managed properly, as objects are kept alive even when not in use.
+3. **Potential for Deadlocks:** Improper management of object pools can lead to deadlocks, especially in multithreaded environments.
+4. **Limited Pool Size:** If all objects are in use, new requests may have to wait, potentially leading to delays.
+
+### Use Cases
+
+- **Database Connection Pools:** Managing a pool of database connections to reduce the cost of opening and closing connections frequently.
+- **Thread Pools:** Managing a pool of threads to handle concurrent tasks.
+- **Reusable Object Pools:** Managing expensive-to-create objects like network sockets or graphical resources.
+
