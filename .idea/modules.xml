@@ -14,6 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/src/FacadeDesignPattern/FacadeDesignPattern.iml" filepath="$PROJECT_DIR$/src/FacadeDesignPattern/FacadeDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/FactoryPattern/FactoryPattern.iml" filepath="$PROJECT_DIR$/src/FactoryPattern/FactoryPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/HashmapImpl/HashmapImpl.iml" filepath="$PROJECT_DIR$/src/HashmapImpl/HashmapImpl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/BehaviouralDesignPattern/InterpretDesignPattern/InterpretDesignPattern.iml" filepath="$PROJECT_DIR$/src/BehaviouralDesignPattern/InterpretDesignPattern/InterpretDesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/IteratorDP-BDP/IteratorDP-BDP.iml" filepath="$PROJECT_DIR$/src/IteratorDP-BDP/IteratorDP-BDP.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/MVC-DesignPattern/MVC-DesignPattern.iml" filepath="$PROJECT_DIR$/src/MVC-DesignPattern/MVC-DesignPattern.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/MediatorDesignPattern/MediatorDesignPattern.iml" filepath="$PROJECT_DIR$/src/MediatorDesignPattern/MediatorDesignPattern.iml" />

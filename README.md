@@ -208,3 +208,14 @@ public class TemplateMethodPatternDemo {
 - **Enforces a Consistent Algorithm Structure**: The template method ensures that the overall structure of the algorithm remains consistent while allowing specific steps to vary.
 - **Simplifies Code Maintenance**: Changes to the common steps of the algorithm need to be made only in the abstract class.
 
+### Interpreter Design Pattern
+
+The Interpreter pattern provides a way to evaluate language grammar or expressions. It involves defining a grammatical representation for a language and an interpreter to interpret sentences in the language.
+
+### Components
+
+1. **Abstract Expression:** Declares an abstract `interpret` method that is common to all nodes in the abstract syntax tree.
+2. **Terminal Expression:** Implements the `interpret` method for terminal symbols in the grammar.
+3. **Non-terminal Expression:** Implements the `interpret` method for non-terminal symbols in the grammar, representing rules or expressions that involve other expressions.
+4. **Context:** Contains information that's global to the interpreter.
+
